@@ -1,6 +1,3 @@
-require 'browser_detect'
-require 'rails'
-
 # lib/browser_detect/railtie.rb
 module BrowserDetectHelper
 	class Railtie < Rails::Railtie

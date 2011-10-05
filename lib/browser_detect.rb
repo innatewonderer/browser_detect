@@ -26,7 +26,7 @@ module BrowserDetect
 		end
 		not result.nil?
 	end
-	
+
 	# Determine the version of webkit.
 	# Useful for determing rendering capabilities
 	# For instance, Mobile Webkit versions lower than 532 don't handle webfonts very well (intermittent crashing when using multiple faces/weights)
@@ -36,7 +36,7 @@ module BrowserDetect
 			match[1].to_f if (match)
 		end or 0
 	end
-	
+
 	def browser_is_mobile?
 		browser_is? 'mobile'
 	end
@@ -50,3 +50,5 @@ module BrowserDetect
 		end
 	end
 end
+
+require 'railtie' if defined? Rails

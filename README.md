@@ -14,16 +14,16 @@ Browser Detect identifies the client browser using the user agent string that wa
 
 Using Bundler, all you need to do is add the source to your Gemfile:
 
-	gem "browser_detect", :require => "browser_detect", :git => 'git://github.com/traction/browser_detect.git'
+	gem "browser_detect", :git => 'git://github.com/traction/browser_detect.git'
 
 Then run:
 
 	bundle install
-	
+
 or, install it as a plugin:
 
 	script/plugin install git://github.com/traction/browser_detect.git
-	
+
 ## Wield it.
 
 To check if a particular browser made the request, use browser_is?(name)
@@ -33,13 +33,13 @@ To check if a particular browser made the request, use browser_is?(name)
 			# load some chrome-specific content
 		end
 	end
-	
+
 or in a view:
-	
+
 	<%= browser_is?(:chrome) ? "secrets" : "buzz off" %>
-	
+
 Don't forget you can use the special groupings listed above to target IE, robots, iOS, etc.
-	
+
 	<%= stylesheet_link_tag "ugly_styles" if browser_is?('ie') %>
 	<%= stylesheet_link_tag "even_uglier_styles" if browser_is?('ie6') %>
 	<%= render "seo_spam_content" if browser_is?('robot') %>
