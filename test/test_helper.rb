@@ -36,7 +36,7 @@ class Test::Unit::TestCase
 				# add a method name for this fixture type
 				define_method(fixture) do |item|
 					# load and cache the YAML
-					@@fixtures[fixture] ||= YAML::load_file("./fixtures/#{fixture.to_s}.yml")
+					@@fixtures[fixture] ||= YAML::load_file(File.dirname(__FILE__)+"/fixtures/#{fixture.to_s}.yml")
 					@@fixtures[fixture][item.to_s]
 				end
 			end

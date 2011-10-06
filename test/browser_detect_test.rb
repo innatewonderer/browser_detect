@@ -1,5 +1,5 @@
 require File.expand_path(File.dirname(__FILE__)+'/test_helper')
-require '../lib/browser_detect'
+require 'browser_detect'
 
 class BrowserDetectTest < Test::Unit::TestCase
   fixtures :user_agents
