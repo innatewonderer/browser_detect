@@ -1,3 +1,9 @@
+=== 0.0.5 2011-10-6
+
+* 2 Bugs fixed:
+  * Fixed Rails 3 Railtie support (thanks to eric1234)
+  * Fix detection of Safari
+  
 === 0.0.4 2010-11-07
 
 * 1 major enhancement:
