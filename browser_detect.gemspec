@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.homepage    = "http://github.com/traction/browser_detect"
   s.summary     = "A simple rails browser detection plugin"
   s.description = <<-END
-	Simple rails browser detection based on original plugin by Richard Livsey"
-	END
+  Simple rails browser detection based on original plugin by Richard Livsey"
+  END
 
   s.required_rubygems_version = ">= 1.3.6"
   s.rubyforge_project         = "browser_detect"
