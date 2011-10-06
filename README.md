@@ -14,13 +14,13 @@ Browser Detect identifies the client browser using the user agent string that wa
 
 Using Bundler, all you need to do is add the source to your Gemfile:
 
-	gem "browser_detect", :git => 'git://github.com/traction/browser_detect.git'
+	gem "browser_detect"
 
 Then run:
 
 	bundle install
 
-or, install it as a plugin:
+or, install it as a plugin using Rails 2:
 
 	script/plugin install git://github.com/traction/browser_detect.git
 
